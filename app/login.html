@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATÉ PASSAR — Entrar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-left">
+      <div class="login-brand">
+        <a href="../index.html" class="logo-link">
+          <svg width="38" height="38" viewBox="0 0 34 34" fill="none"><defs><linearGradient id="lg" x1="0" y1="0" x2="34" y2="34"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient></defs><circle cx="15" cy="19" r="13" stroke="url(#lg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="8.5" stroke="url(#lg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="4" stroke="url(#lg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="1.8" fill="url(#lg)"/><line x1="14" y1="20" x2="27" y2="7" stroke="url(#lg)" stroke-width="2.2" stroke-linecap="round"/><path d="M27 7 L22 7 M27 7 L27 12" stroke="url(#lg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-name">ATÉ PASSAR</span>
+        </a>
+      </div>
+      <div class="login-hero-text">
+        <h1>Sua aprovação<br/><span class="grad">começa aqui.</span></h1>
+        <p>Organize seus estudos, acompanhe seu progresso e conquiste sua vaga.</p>
+      </div>
+      <div class="login-stats">
+        <div class="ls-item"><strong>+500k</strong><span>Estudantes</span></div>
+        <div class="ls-item"><strong>4.9★</strong><span>Avaliação</span></div>
+        <div class="ls-item"><strong>100%</strong><span>Gratuito</span></div>
+      </div>
+    </div>
+    <div class="login-right">
+      <div class="login-card" id="login-card">
+        <div class="login-tabs">
+          <button class="tab-btn active" id="tab-login" data-tab="login">Entrar</button>
+          <button class="tab-btn" id="tab-register" data-tab="register">Criar conta</button>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form class="login-form" id="form-login" autocomplete="on">
+          <div class="field">
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" placeholder="seu@email.com" required autocomplete="email"/>
+          </div>
+          <div class="field">
+            <label for="login-password">Senha</label>
+            <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password"/>
+          </div>
+          <button type="submit" class="submit-btn" id="btn-login-submit">Entrar</button>
+          <p class="form-footer">Não tem conta? <a href="#" id="switch-to-register">Crie uma agora</a></p>
+        </form>
+
+        <!-- REGISTER FORM -->
+        <form class="login-form hidden" id="form-register" autocomplete="on">
+          <div class="field">
+            <label for="reg-name">Nome completo</label>
+            <input type="text" id="reg-name" placeholder="Seu nome" required autocomplete="name"/>
+          </div>
+          <div class="field">
+            <label for="reg-email">E-mail</label>
+            <input type="email" id="reg-email" placeholder="seu@email.com" required autocomplete="email"/>
+          </div>
+          <div class="field">
+            <label for="reg-password">Senha</label>
+            <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres" required minlength="6" autocomplete="new-password"/>
+          </div>
+          <div class="field">
+            <label for="reg-goal">Meta diária de estudo</label>
+            <select id="reg-goal">
+              <option value="2">2 horas</option>
+              <option value="4">4 horas</option>
+              <option value="6" selected>6 horas</option>
+              <option value="8">8 horas</option>
+              <option value="10">10 horas</option>
+              <option value="12">12 horas</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn" id="btn-register-submit">Criar conta gratuita</button>
+          <p class="form-footer">Já tem conta? <a href="#" id="switch-to-login">Faça login</a></p>
+        </form>
+
+        <div class="login-error hidden" id="login-error"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tabLogin = document.getElementById('tab-login');
+    const tabRegister = document.getElementById('tab-register');
+    const formLogin = document.getElementById('form-login');
+    const formRegister = document.getElementById('form-register');
+    const errorEl = document.getElementById('login-error');
+
+    function showTab(tab) {
+      if (tab === 'login') {
+        tabLogin.classList.add('active'); tabRegister.classList.remove('active');
+        formLogin.classList.remove('hidden'); formRegister.classList.add('hidden');
+      } else {
+        tabRegister.classList.add('active'); tabLogin.classList.remove('active');
+        formRegister.classList.remove('hidden'); formLogin.classList.add('hidden');
+      }
+      errorEl.classList.add('hidden');
+    }
+
+    tabLogin.onclick = () => showTab('login');
+    tabRegister.onclick = () => showTab('register');
+    document.getElementById('switch-to-register').onclick = (e) => { e.preventDefault(); showTab('register'); };
+    document.getElementById('switch-to-login').onclick = (e) => { e.preventDefault(); showTab('login'); };
+
+    // Check hash
+    if (location.hash === '#cadastro' || location.hash === '#register') showTab('register');
+
+    function showError(msg) {
+      errorEl.textContent = msg;
+      errorEl.classList.remove('hidden');
+      setTimeout(() => errorEl.classList.add('hidden'), 4000);
+    }
+
+    // REGISTER
+    formRegister.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('reg-name').value.trim();
+      const email = document.getElementById('reg-email').value.trim().toLowerCase();
+      const password = document.getElementById('reg-password').value;
+      const goal = parseInt(document.getElementById('reg-goal').value);
+      if (password.length < 6) return showError('A senha deve ter pelo menos 6 caracteres.');
+      const users = JSON.parse(localStorage.getItem('ap_users') || '{}');
+      if (users[email]) return showError('Já existe uma conta com esse e-mail.');
+      users[email] = { name, email, password: btoa(password), goal, createdAt: new Date().toISOString() };
+      localStorage.setItem('ap_users', JSON.stringify(users));
+      localStorage.setItem('ap_current_user', email);
+      // Init user data
+      if (!localStorage.getItem('ap_data_' + email)) {
+        localStorage.setItem('ap_data_' + email, JSON.stringify({ subjects: [], activities: [], settings: { pomodoroWork: 25, pomodoroBreak: 5, dailyGoal: goal } }));
+      }
+      window.location.href = 'app.html';
+    });
+
+    // LOGIN
+    formLogin.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value.trim().toLowerCase();
+      const password = document.getElementById('login-password').value;
+      const users = JSON.parse(localStorage.getItem('ap_users') || '{}');
+      if (!users[email]) return showError('Conta não encontrada.');
+      if (users[email].password !== btoa(password)) return showError('Senha incorreta.');
+      localStorage.setItem('ap_current_user', email);
+      window.location.href = 'app.html';
+    });
+
+    // Already logged in?
+    if (localStorage.getItem('ap_current_user')) {
+      window.location.href = 'app.html';
+    }
+  </script>
+</body>
+</html>

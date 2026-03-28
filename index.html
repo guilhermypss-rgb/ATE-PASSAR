@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATÉ PASSAR – Sua plataforma de estudos inteligente</title>
+  <meta name="description" content="ATÉ PASSAR: A plataforma de estudos que transforma sua rotina e te leva à aprovação. Organize, planeje e domine sua preparação para concursos, ENEM e vestibulares." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <div class="logo-icon">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="34" y2="34">
+                <stop offset="0%" stop-color="#7C3AED"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+            <!-- Outer ring -->
+            <circle cx="15" cy="19" r="13" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
+            <!-- Middle ring -->
+            <circle cx="15" cy="19" r="8.5" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
+            <!-- Inner ring -->
+            <circle cx="15" cy="19" r="4" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
+            <!-- Bullseye center -->
+            <circle cx="15" cy="19" r="1.8" fill="url(#logoGrad)"/>
+            <!-- Arrow shaft -->
+            <line x1="14" y1="20" x2="27" y2="7" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- Arrow head -->
+            <path d="M27 7 L22 7 M27 7 L27 12" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">ATÉ PASSAR</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#funcionalidades" class="nav-link" id="nav-funcionalidades">Funcionalidades</a>
+        <a href="#planos" class="nav-link" id="nav-planos">Planos</a>
+        <a href="#depoimentos" class="nav-link" id="nav-depoimentos">Depoimentos</a>
+        <a href="#faq" class="nav-link" id="nav-faq">FAQ</a>
+        <a href="#blog" class="nav-link" id="nav-blog">Blog</a>
+      </div>
+      <div class="nav-actions">
+        <a href="app/login.html#login" class="btn-outline" id="btn-entrar">Entrar</a>
+        <a href="app/login.html#cadastro" class="btn-primary" id="btn-cadastro-nav">Criar conta grátis</a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        🚀 +500 mil estudantes já aprovados
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Estude com <span class="gradient-text">estratégia</span>,<br/>
+        não apenas com <span class="gradient-text">esforço</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        A plataforma que transforma a sua rotina de estudos. Planejamento inteligente, revisões programadas e análise de desempenho — tudo para você chegar lá <strong>de vez</strong>.
+      </p>
+      <div class="hero-ctas" id="hero-ctas">
+        <a href="#cadastro" class="btn-hero-primary" id="btn-hero-cadastro">
+          <span>Começar agora — é grátis</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#funcionalidades" class="btn-hero-secondary" id="btn-hero-ver">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+          </svg>
+          <span>Ver como funciona</span>
+        </a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">+500k</span>
+          <span class="stat-label">Estudantes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Avaliação</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">+20k</span>
+          <span class="stat-label">Avaliações</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Gratuito p/ começar</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="app-mockup" id="app-mockup">
+        <div class="mockup-header">
+          <div class="mockup-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="mockup-title">ATÉ PASSAR</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-stats-row">
+            <div class="mockup-card green">
+              <span class="mc-label">Hoje</span>
+              <span class="mc-value">4h 32m</span>
+              <span class="mc-sub">Meta: 5h ✓</span>
+            </div>
+            <div class="mockup-card purple">
+              <span class="mc-label">Semana</span>
+              <span class="mc-value">28h 15m</span>
+              <span class="mc-sub">+12% 📈</span>
+            </div>
+          </div>
+          <div class="mockup-subjects">
+            <div class="ms-item">
+              <span class="ms-name">Direito Constitucional</span>
+              <div class="ms-bar">
+                <div class="ms-fill" style="width:78%; background: linear-gradient(90deg, #7C3AED, #A855F7)"></div>
+              </div>
+              <span class="ms-pct">78%</span>
+            </div>
+            <div class="ms-item">
+              <span class="ms-name">Português</span>
+              <div class="ms-bar">
+                <div class="ms-fill" style="width:65%; background: linear-gradient(90deg, #06B6D4, #0EA5E9)"></div>
+              </div>
+              <span class="ms-pct">65%</span>
+            </div>
+            <div class="ms-item">
+              <span class="ms-name">Matemática</span>
+              <div class="ms-bar">
+                <div class="ms-fill" style="width:52%; background: linear-gradient(90deg, #10B981, #34D399)"></div>
+              </div>
+              <span class="ms-pct">52%</span>
+            </div>
+            <div class="ms-item">
+              <span class="ms-name">Raciocínio Lógico</span>
+              <div class="ms-bar">
+                <div class="ms-fill" style="width:41%; background: linear-gradient(90deg, #F59E0B, #FBB62B)"></div>
+              </div>
+              <span class="ms-pct">41%</span>
+            </div>
+          </div>
+          <div class="mockup-session">
+            <div class="session-label">Sessão atual — Pomodoro</div>
+            <div class="session-timer">24:37</div>
+            <div class="session-controls">
+              <button class="sc-btn pause" id="mock-pause">⏸</button>
+              <button class="sc-btn stop" id="mock-stop">⏹</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="hero-scroll">
+      <span>Role para ver mais</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY / SOCIAL PROOF BANNER -->
+  <section class="trust-bar" id="trust-bar">
+    <div class="trust-container">
+      <span class="trust-label">Destaque em:</span>
+      <div class="trust-logos">
+        <span class="trust-logo" id="trust-g1">G1 Globo</span>
+        <span class="trust-sep">•</span>
+        <span class="trust-logo" id="trust-techtudo">TechTudo</span>
+        <span class="trust-sep">•</span>
+        <span class="trust-logo" id="trust-guia">Guia do Estudante</span>
+        <span class="trust-sep">•</span>
+        <span class="trust-logo" id="trust-oglobo">O Globo</span>
+        <span class="trust-sep">•</span>
+        <span class="trust-logo" id="trust-uol">UOL Educação</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES INTRO -->
+  <section class="features-intro" id="funcionalidades">
+    <div class="section-container">
+      <div class="section-tag">✨ Funcionalidades</div>
+      <h2 class="section-title">Tudo que você precisa,<br/><span class="gradient-text">em um só lugar</span></h2>
+      <p class="section-subtitle">Chega de planilha bagunçada e caderninho perdido. O ATÉ PASSAR reúne todas as ferramentas que o estudante sério precisa.</p>
+    </div>
+    <div class="features-grid" id="features-grid">
+      <div class="feature-card" id="feat-horas">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #7C3AED20, #7C3AED40)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="11" stroke="#7C3AED" stroke-width="2"/>
+            <path d="M14 8V14L18 17" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Horas Líquidas de Estudo</h3>
+        <p class="feat-desc">Pausou para um café? Sem problema. O ATÉ PASSAR desconta automaticamente o tempo ocioso e calcula apenas suas horas reais de foco.</p>
+        <span class="feat-tag">Grátis</span>
+      </div>
+      <div class="feature-card" id="feat-ciclo">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #06B6D420, #06B6D440)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M5 14 C5 8.477 9.477 4 15 4" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+            <path d="M23 14 C23 19.523 18.523 24 13 24" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 4 L18 7 L15 10" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 24 L10 21 L13 18" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Ciclos de Estudo Flexíveis</h3>
+        <p class="feat-desc">Monte ciclos semanais personalizados e alterne entre matérias de forma inteligente. Sem monotonia, mais retenção.</p>
+        <span class="feat-tag premium">Premium</span>
+      </div>
+      <div class="feature-card" id="feat-revisao">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #10B98120, #10B98140)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="4" y="6" width="20" height="17" rx="2" stroke="#10B981" stroke-width="2"/>
+            <path d="M4 11H24" stroke="#10B981" stroke-width="2"/>
+            <path d="M10 3V7M18 3V7" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9 16L12 19L19 13" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Revisão pela Curva do Esquecimento</h3>
+        <p class="feat-desc">O sistema agendas suas revisões automaticamente com base na ciência da memória. Grave mais conteúdo com menos esforço.</p>
+        <span class="feat-tag premium">Premium</span>
+      </div>
+      <div class="feature-card" id="feat-pomodoro">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #F59E0B20, #F59E0B40)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="15" r="9" stroke="#F59E0B" stroke-width="2"/>
+            <path d="M11 9 C11 7.343 12.343 6 14 6 C15.657 6 17 7.343 17 9" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            <path d="M14 10V15" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Timer Pomodoro Inteligente</h3>
+        <p class="feat-desc">Sessões de foco cronometradas com pausas programadas. Configure o tempo ideal para o seu ritmo e turbine sua concentração.</p>
+        <span class="feat-tag">Grátis</span>
+      </div>
+      <div class="feature-card" id="feat-questoes">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #EC489920, #EC489940)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M7 14 L12 19 L21 9" stroke="#EC4899" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="14" cy="14" r="11" stroke="#EC4899" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Registro de Questões</h3>
+        <p class="feat-desc">Anote acertos e erros por matéria e identifique exatamente onde você precisa melhorar. Veja sua taxa de aproveitamento subir.</p>
+        <span class="feat-tag premium">Premium</span>
+      </div>
+      <div class="feature-card" id="feat-relatorio">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #8B5CF620, #8B5CF640)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="4" y="4" width="20" height="20" rx="2" stroke="#8B5CF6" stroke-width="2"/>
+            <path d="M8 18 L11 14 L15 16 L20 10" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Relatórios e Gráficos</h3>
+        <p class="feat-desc">Visualize sua evolução com dashboards detalhados. Histórico completo, tendências e insights para tomar decisões melhores sobre seus estudos.</p>
+        <span class="feat-tag">Grátis</span>
+      </div>
+      <div class="feature-card" id="feat-offline">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #14B8A620, #14B8A640)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="8" y="3" width="12" height="22" rx="2" stroke="#14B8A6" stroke-width="2"/>
+            <circle cx="14" cy="21" r="1.5" fill="#14B8A6"/>
+            <path d="M11 7H17" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">100% Offline e Multiplataforma</h3>
+        <p class="feat-desc">Web, Android e iOS. Funciona sem internet — seus dados sincronizam quando você voltar online. Estude em qualquer lugar.</p>
+        <span class="feat-tag">Grátis</span>
+      </div>
+      <div class="feature-card" id="feat-metas">
+        <div class="feat-icon" style="background: linear-gradient(135deg, #6366F120, #6366F140)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 3 L17 9 L24 10 L19 15 L20.5 22 L14 18.5 L7.5 22 L9 15 L4 10 L11 9 Z" stroke="#6366F1" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Metas Semanais e Mensais</h3>
+        <p class="feat-desc">Defina objetivos realistas e acompanhe seu progresso em tempo real. Celebre conquistas e ajuste a rota quando necessário.</p>
+        <span class="feat-tag premium">Premium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="section-container">
+      <div class="section-tag">⚡ Como funciona</div>
+      <h2 class="section-title">Do caos à <span class="gradient-text">aprovação</span></h2>
+      <p class="section-subtitle">Em 3 passos simples, você transforma sua rotina de estudos</p>
+    </div>
+    <div class="steps-container" id="steps-container">
+      <div class="step-card" id="step-1">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3 class="step-title">Cadastre suas matérias</h3>
+          <p class="step-desc">Adicione suas disciplinas, configure suas metas de horas semanais e personalize seu ciclo de estudos em poucos minutos.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card" id="step-2">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3 class="step-title">Estude e registre</h3>
+          <p class="step-desc">Abra o timer, estude com foco e registre cada sessão. O ATÉ PASSAR calcula automaticamente suas horas líquidas.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card" id="step-3">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3 class="step-title">Analise e evolua</h3>
+          <p class="step-desc">Acompanhe relatórios detalhados, identifique pontos fracos e ajuste sua estratégia. A aprovação é consequência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS / PRICING -->
+  <section class="pricing" id="planos">
+    <div class="section-container">
+      <div class="section-tag">💎 Planos</div>
+      <h2 class="section-title">Preço de <span class="gradient-text">lanche</span>,<br/>retorno de <span class="gradient-text">aprovação</span></h2>
+      <p class="section-subtitle">Comece grátis. Desbloqueie o que você precisa, quando precisar. Pagamento único — sem assinaturas mensais.</p>
+    </div>
+    <div class="pricing-grid" id="pricing-grid">
+
+      <!-- FREE -->
+      <div class="pricing-card" id="plan-free">
+        <div class="plan-badge free">Grátis</div>
+        <h3 class="plan-name">Básico</h3>
+        <div class="plan-price">
+          <span class="price-currency">R$</span>
+          <span class="price-amount">0</span>
+          <span class="price-period">para sempre</span>
+        </div>
+        <p class="plan-desc">A base que você precisa para começar a estudar com método.</p>
+        <ul class="plan-features" id="plan-free-features">
+          <li class="pf-item included">✅ Cronômetro e Pomodoro</li>
+          <li class="pf-item included">✅ Registro de horas líquidas</li>
+          <li class="pf-item included">✅ Histórico de sessões</li>
+          <li class="pf-item included">✅ Relatórios básicos</li>
+          <li class="pf-item included">✅ App Android, iOS e Web</li>
+          <li class="pf-item included">✅ Funciona offline</li>
+          <li class="pf-item excluded">❌ Ciclos de estudo</li>
+          <li class="pf-item excluded">❌ Revisão automática</li>
+          <li class="pf-item excluded">❌ Registro de questões</li>
+        </ul>
+        <a href="#cadastro" class="plan-cta outline" id="btn-plan-free">Começar grátis</a>
+      </div>
+
+      <!-- PLANNING -->
+      <div class="pricing-card featured" id="plan-ciclo">
+        <div class="plan-popular-tag">🔥 Mais popular</div>
+        <div class="plan-badge featured-badge">Único</div>
+        <h3 class="plan-name">Planejamento Pro</h3>
+        <div class="plan-price">
+          <span class="price-currency">R$</span>
+          <span class="price-amount">27</span>
+          <span class="price-period">pagamento único</span>
+        </div>
+        <p class="plan-desc">Para quem leva a sério e quer um plano de estudo de verdade.</p>
+        <ul class="plan-features" id="plan-ciclo-features">
+          <li class="pf-item included">✅ Tudo do plano Básico</li>
+          <li class="pf-item included">✅ Ciclos de estudo personalizados</li>
+          <li class="pf-item included">✅ Metas semanais e mensais</li>
+          <li class="pf-item included">✅ Planejamento por concurso/edital</li>
+          <li class="pf-item included">✅ Notificações de estudo</li>
+          <li class="pf-item included">✅ Relatórios avançados</li>
+          <li class="pf-item excluded">❌ Revisão automática</li>
+          <li class="pf-item excluded">❌ Registro de questões</li>
+        </ul>
+        <a href="#cadastro" class="plan-cta primary" id="btn-plan-ciclo">Quero este plano</a>
+      </div>
+
+      <!-- REVISION -->
+      <div class="pricing-card" id="plan-revisao">
+        <div class="plan-badge">Único</div>
+        <h3 class="plan-name">Revisão Inteligente</h3>
+        <div class="plan-price">
+          <span class="price-currency">R$</span>
+          <span class="price-amount">27</span>
+          <span class="price-period">pagamento único</span>
+        </div>
+        <p class="plan-desc">Aprenda de verdade. A revisão pela curva do esquecimento potencializa sua memória.</p>
+        <ul class="plan-features" id="plan-revisao-features">
+          <li class="pf-item included">✅ Tudo do plano Básico</li>
+          <li class="pf-item included">✅ Revisão pela curva do esquecimento</li>
+          <li class="pf-item included">✅ Agendamento automático de revisões</li>
+          <li class="pf-item included">✅ Alertas de conteúdo esquecido</li>
+          <li class="pf-item included">✅ Flashcards integrados</li>
+          <li class="pf-item included">✅ Histórico de revisões</li>
+          <li class="pf-item excluded">❌ Ciclos de estudo</li>
+          <li class="pf-item excluded">❌ Registro de questões</li>
+        </ul>
+        <a href="#cadastro" class="plan-cta outline" id="btn-plan-revisao">Quero este plano</a>
+      </div>
+
+      <!-- FULL -->
+      <div class="pricing-card gold" id="plan-full">
+        <div class="plan-badge gold-badge">⭐ Completo</div>
+        <h3 class="plan-name">ATÉ PASSAR Total</h3>
+        <div class="plan-price">
+          <span class="price-strike">R$ 81</span>
+          <div class="price-row">
+            <span class="price-currency">R$</span>
+            <span class="price-amount">57</span>
+          </div>
+          <span class="price-period">todos os módulos — único pagamento</span>
+        </div>
+        <p class="plan-desc">A experiência completa. Tudo que um candidato sério precisa para passar.</p>
+        <ul class="plan-features" id="plan-full-features">
+          <li class="pf-item included">✅ TUDO do plano Básico</li>
+          <li class="pf-item included">✅ Ciclos de estudo Pro</li>
+          <li class="pf-item included">✅ Revisão inteligente</li>
+          <li class="pf-item included">✅ Registro de questões completo</li>
+          <li class="pf-item included">✅ Análise de acertos/erros por banca</li>
+          <li class="pf-item included">✅ Dashboard de performance</li>
+          <li class="pf-item included">✅ Suporte prioritário</li>
+          <li class="pf-item included">✅ Atualizações vitalícias</li>
+        </ul>
+        <a href="#cadastro" class="plan-cta gold-cta" id="btn-plan-full">Quero o pacote completo</a>
+      </div>
+
+    </div>
+    <p class="pricing-note" id="pricing-note">💡 <strong>Por que pagamento único?</strong> Porque acreditamos que o estudante já gasta o suficiente. Pague uma vez, use para sempre.</p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="depoimentos">
+    <div class="section-container">
+      <div class="section-tag">💬 Depoimentos</div>
+      <h2 class="section-title">Quem usou o ATÉ PASSAR<br/><span class="gradient-text">passou de verdade</span></h2>
+    </div>
+    <div class="testimonials-grid" id="testimonials-grid">
+      <div class="testi-card" id="testi-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Passei no concurso da Receita Federal depois de 2 anos tentando. O que mudou? O ATÉ PASSAR me mostrou que eu estudava muito, mas sem estratégia. Agora estudo menos horas e retenho muito mais."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #7C3AED, #06B6D4)">MR</div>
+          <div>
+            <strong>Marcos Reis</strong>
+            <span>Aprovado — Receita Federal</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card featured" id="testi-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Sou professora e usava planilha do Excel pra controlar meus alunos. Indiquei o ATÉ PASSAR pra todos. A revisão automática é um divisor de águas — meus alunos retêm 3x mais conteúdo."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #EC4899, #8B5CF6)">AC</div>
+          <div>
+            <strong>Ana Carolina Lima</strong>
+            <span>Professora e Concurseira</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" id="testi-3">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Passei no ENEM com nota 920 e entrei pra medicina na USP. O planejamento de estudos do ATÉ PASSAR foi fundamental. Eu sabia exatamente quanto tempo dedicar em cada matéria."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #10B981, #06B6D4)">LP</div>
+          <div>
+            <strong>Lucas Pinheiro</strong>
+            <span>Aprovado — Medicina USP (ENEM 920)</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" id="testi-4">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Passei no OAB em duas fases na primeira tentativa usando o ATÉ PASSAR. O registro de questões por matéria me ajudou a focar nos temas que eu mais errava. Incrível!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #F59E0B, #EC4899)">JS</div>
+          <div>
+            <strong>Juliana Souza</strong>
+            <span>Advogada — Aprovada OAB 1ª tentativa</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" id="testi-5">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Trabalhava durante o dia e estudava à noite. O timer Pomodoro me salvou — aprendi a estudar de forma mais eficiente em menos tempo. Passei no TRT em 8 meses!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #6366F1, #7C3AED)">RG</div>
+          <div>
+            <strong>Rafael Gonçalves</strong>
+            <span>Aprovado — TRT 2ª Região</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" id="testi-6">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Tentei 4 vezes a PM de SP sem sucesso. Com o ATÉ PASSAR, organizei minha rotina do zero, identifiquei minhas maiores lacunas e na 5ª tentativa finalmente passei!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #14B8A6, #10B981)">FM</div>
+          <div>
+            <strong>Fernanda Martins</strong>
+            <span>Aprovada — PM São Paulo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="section-tag">❓ Dúvidas frequentes</div>
+      <h2 class="section-title">Tudo que você precisa<br/><span class="gradient-text">saber antes de começar</span></h2>
+      <p class="section-subtitle">Respondemos as perguntas mais comuns dos nossos estudantes.</p>
+    </div>
+    <div class="faq-container" id="faq-container">
+
+      <div class="faq-item" id="faq-1">
+        <button class="faq-question" id="faq-q1" aria-expanded="false">
+          <span>O ATÉ PASSAR é realmente gratuito?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! O plano Básico é totalmente gratuito e não tem prazo de expiração. Você pode usar o cronômetro, o Pomodoro, o registro de horas líquidas e os relatórios básicos sem pagar nada. Os módulos premium (Planejamento, Revisão e Questões) são opcionais e têm preço único — sem mensalidade.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-2">
+        <button class="faq-question" id="faq-q2" aria-expanded="false">
+          <span>O pagamento é mesmo único? Sem renovação anual?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Isso mesmo. Você paga uma vez e tem acesso para sempre, incluindo todas as atualizações futuras do módulo adquirido. Acreditamos que o estudante já gasta muito com cursos e materiais — não faz sentido cobrar mensalidade por uma ferramenta de gestão.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-3">
+        <button class="faq-question" id="faq-q3" aria-expanded="false">
+          <span>Funciona offline? E em quais dispositivos?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>O ATÉ PASSAR funciona no <strong>navegador web</strong>, <strong>Android</strong> e <strong>iOS</strong>. Todos os dados ficam salvos localmente e sincronizam automaticamente quando você tiver conexão. Você pode estudar em qualquer lugar, mesmo sem internet.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-4">
+        <button class="faq-question" id="faq-q4" aria-expanded="false">
+          <span>O ATÉ PASSAR serve para qual tipo de estudo?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Para qualquer tipo! A plataforma foi pensada especialmente para <strong>concursos públicos</strong>, <strong>ENEM</strong>, <strong>vestibulares</strong>, <strong>OAB</strong>, <strong>residências médicas</strong> e qualquer preparação que exija método e consistência. O sistema é flexível o suficiente para se adaptar ao seu edital e objetivo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-5">
+        <button class="faq-question" id="faq-q5" aria-expanded="false">
+          <span>O que é a "curva do esquecimento" nas revisões?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>É uma teoria científica do psicólogo Hermann Ebbinghaus que mostra que esquecemos a maior parte do que aprendemos em poucos dias, a menos que revisemos no momento certo. O módulo de Revisão Inteligente do ATÉ PASSAR agenda automaticamente suas revisões nos intervalos ideais (1, 3, 7, 15 e 30 dias), maximizando a retenção com menos esforço.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-6">
+        <button class="faq-question" id="faq-q6" aria-expanded="false">
+          <span>Posso comprar apenas um módulo premium?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! Cada módulo é vendido separadamente por R$27. Você escolhe o que faz mais sentido para o seu momento de preparação. Ou, se quiser o pacote completo (Planejamento + Revisão + Questões), você paga R$57 e economiza R$24 em relação à compra individual.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-7">
+        <button class="faq-question" id="faq-q7" aria-expanded="false">
+          <span>Tem garantia? E se eu não gostar?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Temos <strong>7 dias de garantia</strong> incondicional para qualquer módulo pago. Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas. O risco é todo nosso.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section" id="cta-section">
+    <div class="cta-orbs">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+    </div>
+    <div class="cta-container">
+      <div class="cta-badge">🎯 Comece hoje</div>
+      <h2 class="cta-title" id="cta-title">Sua aprovação começa<br/><span class="gradient-text">no próximo segundo</span></h2>
+      <p class="cta-subtitle" id="cta-subtitle">Pare de estudar às cegas. Junte-se a mais de 500 mil estudantes que já transformaram sua preparação com o ATÉ PASSAR.</p>
+      <div class="cta-buttons" id="cta-buttons">
+        <a href="#cadastro" class="btn-hero-primary" id="btn-cta-primary">
+          <span>Criar conta gratuita agora</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="cta-app-links" id="cta-app-links">
+          <a href="#" class="app-store-btn" id="btn-ios">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M14.5 10.5C14.5 8.5 15.8 7.3 17 6.5C16 5 14.5 4 13 4C11.7 4 11 4.8 10 4.8C9 4.8 8.1 4 7 4C5 4 3 6 3 9C3 12.5 5.3 17 7.5 17C8.5 17 9 16.3 10 16.3C11 16.3 11.4 17 12.5 17C14.8 17 16.5 12.5 17.5 11C16.2 10.4 14.5 10.5 14.5 10.5ZM12 3C12.7 2.2 13.2 1 13 0C11.8 0.1 10.4 0.9 9.7 1.8C9 2.6 8.5 3.8 8.7 5C10 5 11.3 4.2 12 3Z"/></svg>
+            App Store
+          </a>
+          <a href="#" class="app-store-btn" id="btn-android">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M3 14.5C3 15.3 3.7 16 4.5 16H5V18.5C5 19.3 5.7 20 6.5 20C7.3 20 8 19.3 8 18.5V16H12V18.5C12 19.3 12.7 20 13.5 20C14.3 20 15 19.3 15 18.5V16H15.5C16.3 16 17 15.3 17 14.5V7H3V14.5ZM1.5 7C0.7 7 0 7.7 0 8.5V13.5C0 14.3 0.7 15 1.5 15C2.3 15 3 14.3 3 13.5V8.5C3 7.7 2.3 7 1.5 7ZM18.5 7C17.7 7 17 7.7 17 8.5V13.5C17 14.3 17.7 15 18.5 15C19.3 15 20 14.3 20 13.5V8.5C20 7.7 19.3 7 18.5 7ZM13.3 2.1L14.8 0.6C15.1 0.3 15.1 -0.1 14.8 -0.4C14.5 -0.7 14.1 -0.7 13.8 -0.4L12.1 1.3C11.5 1.1 10.8 1 10 1C9.2 1 8.5 1.1 7.9 1.3L6.2 -0.4C5.9 -0.7 5.5 -0.7 5.2 -0.4C4.9 -0.1 4.9 0.3 5.2 0.6L6.7 2.1C5.1 3.1 4 4.9 4 7H16C16 4.9 14.9 3.1 13.3 2.1ZM8 5H7V4H8V5ZM13 5H12V4H13V5Z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <p class="cta-disclaimer" id="cta-disclaimer">Sem cartão de crédito. Sem assinatura. Comece em 30 segundos.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand" id="footer-brand">
+        <a href="#" class="nav-logo">
+          <div class="logo-icon">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="34" y2="34">
+                  <stop offset="0%" stop-color="#7C3AED"/>
+                  <stop offset="100%" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+              <!-- Outer ring -->
+              <circle cx="15" cy="19" r="13" stroke="url(#logoGrad2)" stroke-width="2" fill="none"/>
+              <!-- Middle ring -->
+              <circle cx="15" cy="19" r="8.5" stroke="url(#logoGrad2)" stroke-width="2" fill="none"/>
+              <!-- Inner ring -->
+              <circle cx="15" cy="19" r="4" stroke="url(#logoGrad2)" stroke-width="2" fill="none"/>
+              <!-- Bullseye center -->
+              <circle cx="15" cy="19" r="1.8" fill="url(#logoGrad2)"/>
+              <!-- Arrow shaft -->
+              <line x1="14" y1="20" x2="27" y2="7" stroke="url(#logoGrad2)" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- Arrow head -->
+              <path d="M27 7 L22 7 M27 7 L27 12" stroke="url(#logoGrad2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="logo-text">ATÉ PASSAR</span>
+        </a>
+        <p class="footer-tagline">Sua plataforma de estudos inteligente.<br/>Do planejamento à aprovação.</p>
+        <div class="footer-social" id="footer-social">
+          <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-tiktok" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.52a8.16 8.16 0 004.77 1.52V6.59a4.85 4.85 0 01-1-.1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links" id="footer-links">
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <a href="#funcionalidades" id="footer-funcionalidades">Funcionalidades</a>
+          <a href="#planos" id="footer-planos">Planos e Preços</a>
+          <a href="#" id="footer-comparativo">Comparativo</a>
+          <a href="#" id="footer-updates">Novidades</a>
+        </div>
+        <div class="footer-col">
+          <h4>Estudantes</h4>
+          <a href="#" id="footer-concursos">Concursos Públicos</a>
+          <a href="#" id="footer-enem">ENEM e Vestibular</a>
+          <a href="#" id="footer-oab">OAB</a>
+          <a href="#" id="footer-blog">Blog de Estudos</a>
+        </div>
+        <div class="footer-col">
+          <h4>Suporte</h4>
+          <a href="#" id="footer-ajuda">Central de Ajuda</a>
+          <a href="#" id="footer-contato">Contato</a>
+          <a href="#" id="footer-comunidade">Comunidade</a>
+          <a href="#" id="footer-status">Status do sistema</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#" id="footer-termos">Termos de Uso</a>
+          <a href="#" id="footer-privacidade">Política de Privacidade</a>
+          <a href="#" id="footer-cookies">Política de Cookies</a>
+          <a href="#" id="footer-lgpd">LGPD</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" id="footer-bottom">
+      <p>© 2024–2026 ATÉ PASSAR. Todos os direitos reservados. Feito com ❤️ para estudantes brasileiros.</p>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-content">
+      <p>🍪 Usamos cookies para melhorar sua experiência. <a href="#" id="cookie-privacy-link">Política de Privacidade</a></p>
+      <div class="cookie-actions">
+        <button class="cookie-btn outline" id="cookie-reject">Apenas essenciais</button>
+        <button class="cookie-btn primary" id="cookie-accept">Aceitar tudo</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATÉ PASSAR — App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+  <div class="app-layout" id="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none"><defs><linearGradient id="slg" x1="0" y1="0" x2="34" y2="34"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient></defs><circle cx="15" cy="19" r="13" stroke="url(#slg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="8.5" stroke="url(#slg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="4" stroke="url(#slg)" stroke-width="2" fill="none"/><circle cx="15" cy="19" r="1.8" fill="url(#slg)"/><line x1="14" y1="20" x2="27" y2="7" stroke="url(#slg)" stroke-width="2.2" stroke-linecap="round"/><path d="M27 7 L22 7 M27 7 L27 12" stroke="url(#slg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="sb-title">ATÉ PASSAR</span>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <a href="#" class="nav-item active" data-view="dashboard"><span class="ni-icon">🏠</span><span class="ni-label">Dashboard</span></a>
+        <a href="#" class="nav-item" data-view="timer"><span class="ni-icon">⏱️</span><span class="ni-label">Cronômetro</span></a>
+        <a href="#" class="nav-item" data-view="subjects"><span class="ni-icon">📚</span><span class="ni-label">Matérias</span></a>
+        <a href="#" class="nav-item" data-view="activities"><span class="ni-icon">📝</span><span class="ni-label">Histórico</span></a>
+        <a href="#" class="nav-item" data-view="calendar"><span class="ni-icon">📅</span><span class="ni-label">Calendário</span></a>
+        <a href="#" class="nav-item" data-view="reports"><span class="ni-icon">📊</span><span class="ni-label">Relatórios</span></a>
+        <a href="#" class="nav-item" data-view="settings"><span class="ni-icon">⚙️</span><span class="ni-label">Configurações</span></a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-info" id="user-info">
+          <div class="user-avatar" id="user-avatar">U</div>
+          <div class="user-details">
+            <span class="user-name" id="user-name">Usuário</span>
+            <span class="user-email" id="user-email">email@email.com</span>
+          </div>
+        </div>
+        <button class="logout-btn" id="btn-logout" title="Sair">↩</button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="main-content">
+      <header class="top-bar" id="top-bar">
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        <h2 class="page-title" id="page-title">Dashboard</h2>
+        <div class="top-bar-right">
+          <span class="today-date" id="today-date"></span>
+        </div>
+      </header>
+      <div class="view-container" id="view-container">
+        <!-- Views are injected here by JavaScript -->
+      </div>
+    </main>
+
+    <!-- FLOATING TIMER BAR -->
+    <div class="floating-timer hidden" id="floating-timer">
+      <div class="ft-info">
+        <span class="ft-subject" id="ft-subject">Matéria</span>
+        <span class="ft-time" id="ft-time">00:00:00</span>
+      </div>
+      <div class="ft-controls">
+        <button class="ft-btn" id="ft-pause-btn" title="Pausar">⏸</button>
+        <button class="ft-btn ft-stop" id="ft-stop-btn" title="Salvar">💾</button>
+        <button class="ft-btn" id="ft-expand-btn" title="Expandir">🔼</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL OVERLAY -->
+  <div class="modal-overlay hidden" id="modal-overlay">
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="modules/dashboard.js"></script>
+  <script src="modules/timer.js"></script>
+  <script src="modules/subjects.js"></script>
+  <script src="modules/activities.js"></script>
+  <script src="modules/calendar.js"></script>
+  <script src="modules/reports.js"></script>
+  <script src="modules/settings.js"></script>
+  <script>
+    // Initialize the app
+    App.init();
+  </script>
+</body>
+</html>
